@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:online_courses/pages/home.dart';
+import 'package:online_courses/themes/light_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,10 +21,8 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Online Courses',
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-            textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
-          ),
+          themeMode: ThemeMode.system,
+          theme: lightTheme,
           home: child,
         );
       },

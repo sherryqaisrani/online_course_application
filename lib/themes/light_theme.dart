@@ -32,7 +32,6 @@ final lightTheme = ThemeData.light().copyWith(
       ),
       headline5: TextStyle(
         fontSize: 16.sp,
-        fontWeight: FontWeight.bold,
         color: aLightTextColor,
       ),
       headline6: TextStyle(
@@ -42,7 +41,7 @@ final lightTheme = ThemeData.light().copyWith(
       ),
       bodyText1: TextStyle(
         fontSize: 12.sp,
-        color: aLightTextColor1,
+        color: aLightTextColor,
       ),
       subtitle1: TextStyle(
         fontSize: 12.sp,
@@ -55,7 +54,7 @@ final lightTheme = ThemeData.light().copyWith(
     ),
   ),
   iconTheme: IconThemeData(
-    color: aLightPrimary,
+    color: aLightTextColor,
     size: 30.w,
   ),
   inputDecorationTheme: InputDecorationTheme(
@@ -63,7 +62,7 @@ final lightTheme = ThemeData.light().copyWith(
     enabledBorder: outlineInputBorder,
     focusedBorder: outlineInputBorder,
     filled: true,
-    fillColor: aLightBackGround,
+    fillColor: aLightPrimary,
     contentPadding: EdgeInsets.symmetric(
       vertical: 16.h,
     ),
