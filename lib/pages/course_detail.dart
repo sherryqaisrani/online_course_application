@@ -5,6 +5,7 @@ import 'package:online_courses/utils/colors.dart';
 import 'package:online_courses/utils/file_path.dart';
 import 'package:online_courses/widgets/appBar.dart';
 import 'package:online_courses/widgets/course_box.dart';
+import 'package:online_courses/widgets/switch_container.dart';
 import 'package:online_courses/widgets/textContainer.dart';
 
 class CourseDetail extends StatelessWidget {
@@ -51,25 +52,20 @@ class CourseDetail extends StatelessWidget {
                   padding: EdgeInsets.symmetric(
                     vertical: 14.h,
                   ),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(
-                      vertical: 14.h,
+                  child: ListTile(
+                    leading: SvgPicture.asset(
+                      FilePath.circleImage,
                     ),
-                    child: ListTile(
-                      leading: SvgPicture.asset(
-                        FilePath.circleImage,
-                      ),
-                      title: Text(
-                        'Ingredia Nutrisha',
-                        style: Theme.of(context).textTheme.headline6,
-                      ),
-                      subtitle: Text(
-                        'Finance Teacher',
-                        style: Theme.of(context).textTheme.subtitle1,
-                      ),
-                      trailing: SvgPicture.asset(
-                        FilePath.menuIcon,
-                      ),
+                    title: Text(
+                      'Ingredia Nutrisha',
+                      style: Theme.of(context).textTheme.headline6,
+                    ),
+                    subtitle: Text(
+                      'Finance Teacher',
+                      style: Theme.of(context).textTheme.subtitle1,
+                    ),
+                    trailing: SvgPicture.asset(
+                      FilePath.menuIcon,
                     ),
                   ),
                 ),
@@ -91,41 +87,9 @@ class CourseDetail extends StatelessWidget {
               SizedBox(
                 height: 30.h,
               ),
-              Container(
-                width: double.maxFinite,
-                height: 50,
-                decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.secondary,
-                  borderRadius: BorderRadius.circular(8.r),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Container(
-                      height: 38.h,
-                      width: 185.w,
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.primary,
-                        borderRadius: BorderRadius.circular(
-                          7.r,
-                        ),
-                      ),
-                      child: Center(
-                        child: Text(
-                          'Materi',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyText1!
-                              .copyWith(color: aLightGreen),
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'Reviews (453)',
-                      style: Theme.of(context).textTheme.bodyText1,
-                    ),
-                  ],
-                ),
+              SwitchContainer(
+                buttonName: 'Materi',
+                rewview: 'Reviews (453)',
               ),
               SizedBox(
                 height: 30.h,

@@ -12,4 +12,5 @@ class FilePath {
   static String menuIcon = 'assets/svg/menu_icon.svg';
   static String circleImage = 'assets/svg/circle_image.svg';
   static String videoPlayIcon = 'assets/svg/video_play.svg';
+  static String linesIcon = 'assets/svg/lines.svg';
 }

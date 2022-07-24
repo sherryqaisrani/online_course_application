@@ -1,16 +1,14 @@
-# online_courses
-
+<h1 align='center'>Online Course Application UI Design</h1>
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align='left'>
+<img src="screenshots/HomeScreen.jpeg" alt='Home Screen image' width='200' />
+<img src="screenshots/FavouriteCourses.jpeg" alt='Home Screen image' width='200' />
+<br>
+<img src="screenshots/CourseDetail.jpeg" alt='Home Screen image' width='200' />
+<img src="screenshots/MentorScreen.jpeg" alt='Home Screen image' width='200' />
+<br>
+<img src="screenshots/MentorDetails.jpeg" alt='Home Screen image' width='200' />
+  </p>
