@@ -5,14 +5,25 @@ import 'package:online_courses/utils/colors.dart';
 import 'package:online_courses/utils/file_path.dart';
 
 class CourseBox extends StatelessWidget {
-  const CourseBox({
+  String courseName;
+  String coursePrice;
+  String courseRating;
+  String courseParticipants;
+  String buttonName;
+
+  CourseBox({
     Key? key,
+    required this.courseName,
+    required this.coursePrice,
+    required this.courseRating,
+    required this.courseParticipants,
+    required this.buttonName,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 324.w,
+      // width: widthContainer,
       // height: 318.h,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -49,8 +60,8 @@ class CourseBox extends StatelessWidget {
                   right: 8,
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: const Text(
-                      'Experienced',
+                    child: Text(
+                      buttonName,
                     ),
                   ),
                 )
@@ -74,7 +85,7 @@ class CourseBox extends StatelessWidget {
                         style: Theme.of(context).textTheme.subtitle1,
                       ),
                       Text(
-                        '\$90.00',
+                        coursePrice,
                         style: Theme.of(context).textTheme.headline3!.copyWith(
                               color: aLightGreen,
                             ),
@@ -85,7 +96,7 @@ class CourseBox extends StatelessWidget {
                     height: 8.h,
                   ),
                   Text(
-                    'Web Design Education',
+                    courseName,
                     style: Theme.of(context).textTheme.headline6,
                   ),
                   SizedBox(
@@ -105,7 +116,7 @@ class CourseBox extends StatelessWidget {
                             width: 8.w,
                           ),
                           Text(
-                            '4.8 Reviews',
+                            courseRating,
                             style: Theme.of(context).textTheme.subtitle1,
                           ),
                         ],
@@ -121,7 +132,7 @@ class CourseBox extends StatelessWidget {
                             width: 8.w,
                           ),
                           Text(
-                            '257 Participants',
+                            courseParticipants,
                             style: Theme.of(context).textTheme.subtitle1,
                           ),
                         ],

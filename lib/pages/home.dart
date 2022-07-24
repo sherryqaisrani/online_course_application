@@ -118,7 +118,16 @@ class HomePage extends StatelessWidget {
                 SizedBox(
                   height: 20.h,
                 ),
-                CourseBox(),
+                SizedBox(
+                  width: double.maxFinite,
+                  child: CourseBox(
+                    courseName: 'Web Design Education',
+                    coursePrice: '\$90.00',
+                    courseRating: '4.8 Reviews',
+                    courseParticipants: '257 Participants',
+                    buttonName: 'Experienced',
+                  ),
+                ),
                 SizedBox(
                   height: 48.h,
                 ),

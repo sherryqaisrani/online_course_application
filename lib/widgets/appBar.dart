@@ -4,7 +4,7 @@ import 'package:online_courses/utils/colors.dart';
 import 'package:online_courses/utils/file_path.dart';
 import 'package:online_courses/utils/strings.dart';
 
-AppBar appBar(BuildContext context) {
+AppBar appBar(BuildContext context, {required String title}) {
   return AppBar(
     elevation: 0,
     backgroundColor: Colors.transparent,
@@ -14,7 +14,7 @@ AppBar appBar(BuildContext context) {
     ),
     title: Center(
       child: Text(
-        AppStrings.favoriteCourses,
+        title,
         style: Theme.of(context).textTheme.headline5,
       ),
     ),
