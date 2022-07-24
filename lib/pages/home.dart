@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:online_courses/utils/colors.dart';
 import 'package:online_courses/utils/file_path.dart';
 import 'package:online_courses/utils/strings.dart';
+import 'package:online_courses/widgets/bottom_navbar.dart';
 import 'package:online_courses/widgets/category_card.dart';
 import 'package:online_courses/widgets/course_box.dart';
 
@@ -13,6 +14,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: bottomNavigationBar(),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(

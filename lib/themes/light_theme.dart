@@ -57,6 +57,28 @@ final lightTheme = ThemeData.light().copyWith(
     color: aLightTextColor,
     size: 30.w,
   ),
+  bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: aLightPrimary,
+      selectedItemColor: aLightGreen,
+      selectedIconTheme: IconThemeData(
+        color: aLightGreen,
+        size: 24.w,
+      ),
+      unselectedItemColor: aLightGrayColor,
+      unselectedIconTheme: IconThemeData(
+        color: aLightGrayColor,
+        size: 24.w,
+      ),
+      selectedLabelStyle: TextStyle(
+        fontSize: 14.sp,
+        fontWeight: FontWeight.bold,
+        color: aLightGreen,
+      ),
+      unselectedLabelStyle: TextStyle(
+        fontSize: 14.sp,
+        fontWeight: FontWeight.bold,
+        color: aLightTextColor,
+      )),
   inputDecorationTheme: InputDecorationTheme(
     border: outlineInputBorder,
     enabledBorder: outlineInputBorder,

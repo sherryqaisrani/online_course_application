@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 const Color aLightPrimary = Color(0xffFAFAFA);
 const Color aLightBackGround = Color(0xffF2F2F2);
 const Color aLightGray = Color(0xffD0D1D7);
+const Color aLightGrayColor = Color(0xffC2C2C2);
 const Color aLightTextColor = Color(0xff28292C);
 const Color aLightTextColor1 = Color(0xff999BA4);
 const Color aLightGreen = Color(0xff5B73D0);
