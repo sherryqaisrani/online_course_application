@@ -50,20 +50,25 @@ class CourseDetail extends StatelessWidget {
                   padding: EdgeInsets.symmetric(
                     vertical: 14.h,
                   ),
-                  child: ListTile(
-                    leading: SvgPicture.asset(
-                      FilePath.circleImage,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                      vertical: 14.h,
                     ),
-                    title: Text(
-                      'Ingredia Nutrisha',
-                      style: Theme.of(context).textTheme.headline6,
-                    ),
-                    subtitle: Text(
-                      'Finance Teacher',
-                      style: Theme.of(context).textTheme.subtitle1,
-                    ),
-                    trailing: SvgPicture.asset(
-                      FilePath.menuIcon,
+                    child: ListTile(
+                      leading: SvgPicture.asset(
+                        FilePath.circleImage,
+                      ),
+                      title: Text(
+                        'Ingredia Nutrisha',
+                        style: Theme.of(context).textTheme.headline6,
+                      ),
+                      subtitle: Text(
+                        'Finance Teacher',
+                        style: Theme.of(context).textTheme.subtitle1,
+                      ),
+                      trailing: SvgPicture.asset(
+                        FilePath.menuIcon,
+                      ),
                     ),
                   ),
                 ),
