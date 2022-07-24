@@ -10,6 +10,43 @@ class MentorScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List mentorList = [
+      {
+        "name": "Niles Peppertrout",
+        "subject": "Dance Teacher",
+        "rating": "5.0 Reviews",
+      },
+      {
+        "name": "Ingredia Nutrisha",
+        "subject": "Music Teacher",
+        "rating": "4.8 Reviews",
+      },
+      {
+        "name": "Penny Tool",
+        "subject": "Dance Teacher",
+        "rating": "4.9 Reviews",
+      },
+      {
+        "name": "Indigo Violet",
+        "subject": "Theater Teacher",
+        "rating": "4.8 Reviews",
+      },
+      {
+        "name": "Elon Gated",
+        "subject": "Music Teacher",
+        "rating": "5.0 Reviews",
+      },
+      {
+        "name": "Dianne Ameter",
+        "subject": "Dance Teacher",
+        "rating": "4.9 Reviews",
+      },
+      {
+        "name": "Quiche Hollandaise",
+        "subject": "Design Instructor",
+        "rating": "4.8 Reviews",
+      },
+    ];
     return Scaffold(
       appBar: appBar(
         context,
@@ -19,14 +56,20 @@ class MentorScreen extends StatelessWidget {
         padding: EdgeInsets.symmetric(
           horizontal: 14.w,
         ),
-        child: Column(
-          children: [
-            SingleListStyle(
-              mentorName: 'Niles Peppertrout',
-              mentorSubject: 'Dance Teacher',
-              mentorRating: '5.0 Reviews',
+        child: SingleChildScrollView(
+          child: Column(
+            children: List.generate(
+              mentorList.length,
+              (index) => Padding(
+                padding: EdgeInsets.symmetric(vertical: 14.h),
+                child: SingleListStyle(
+                  mentorName: mentorList[index]['name'],
+                  mentorSubject: mentorList[index]['subject'],
+                  mentorRating: mentorList[index]['rating'],
+                ),
+              ),
             ),
-          ],
+          ),
         ),
       ),
     );
