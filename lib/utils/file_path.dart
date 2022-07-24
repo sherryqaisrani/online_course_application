@@ -9,4 +9,5 @@ class FilePath {
   static String courseIcon = 'assets/svg/course_icon.svg';
   static String chatIcon = 'assets/svg/chat_icon.svg';
   static String personIcon = 'assets/svg/person_icon.svg';
+  static String menuIcon = 'assets/svg/menu_icon.svg';
 }

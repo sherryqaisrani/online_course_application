@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:online_courses/pages/favourite_courses.dart';
 import 'package:online_courses/pages/home.dart';
 import 'package:online_courses/themes/light_theme.dart';
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: HomePage(),
+      child: FavouriteCourses(),
     );
   }
 }
