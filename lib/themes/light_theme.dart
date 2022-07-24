@@ -33,6 +33,7 @@ final lightTheme = ThemeData.light().copyWith(
       headline5: TextStyle(
         fontSize: 16.sp,
         color: aLightTextColor,
+        fontWeight: FontWeight.bold,
       ),
       headline6: TextStyle(
         fontSize: 14.sp,
