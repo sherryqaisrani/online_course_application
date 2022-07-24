@@ -5,6 +5,7 @@ import 'package:online_courses/utils/colors.dart';
 import 'package:online_courses/utils/file_path.dart';
 import 'package:online_courses/utils/strings.dart';
 import 'package:online_courses/widgets/category_card.dart';
+import 'package:online_courses/widgets/course_box.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -95,7 +96,8 @@ class HomePage extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodyText1,
                   ),
                 ],
-              )
+              ),
+              CourseBox(),
             ],
           ),
         ),
