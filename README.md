@@ -4,7 +4,7 @@ A new Flutter project.
 ## Getting Started
 
 <p align='left'>
-<img src="screenshots/HomeScreen.jpeg" alt='Home Screen image' width='200' />
+<img src="screenshots/HomesScreen.jpeg" alt='Home Screen image' width='200' />
 <img src="screenshots/FavouriteCourses.jpeg" alt='Home Screen image' width='200' />
 <br>
 <img src="screenshots/CourseDetail.jpeg" alt='Home Screen image' width='200' />
