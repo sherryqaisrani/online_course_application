@@ -5,6 +5,7 @@ import 'package:online_courses/utils/colors.dart';
 import 'package:online_courses/utils/file_path.dart';
 import 'package:online_courses/widgets/appBar.dart';
 import 'package:online_courses/widgets/course_box.dart';
+import 'package:online_courses/widgets/textContainer.dart';
 
 class CourseDetail extends StatelessWidget {
   const CourseDetail({Key? key}) : super(key: key);
@@ -83,18 +84,9 @@ class CourseDetail extends StatelessWidget {
               SizedBox(
                 height: 20.h,
               ),
-              Container(
-                width: double.maxFinite,
-                height: 88.h,
-                decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary,
-                ),
-                child: Center(
-                  child: Text(
-                    'Proin lobortis porttitor leo sed mattis. Aliq vulputate convallis mauris, at dictum elit feugiat. Praesent in nulla porttitor, lobortis.',
-                    style: Theme.of(context).textTheme.subtitle1,
-                  ),
-                ),
+              textContainer(
+                context,
+                'Proin lobortis porttitor leo sed mattis. Aliq vulputate convallis mauris, at dictum elit feugiat. Praesent in nulla porttitor, lobortis',
               ),
               SizedBox(
                 height: 30.h,
